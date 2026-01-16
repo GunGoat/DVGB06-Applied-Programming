@@ -1,0 +1,24 @@
+﻿@model ArtworksVM
+
+<div id="filterOptions"
+     data-sort-by="@Model.SortBy"
+     data-timespan="@Model.TimeSpan"
+     data-search-query="@Model.SearchQuery"
+</div>
+
+<div class="grid">
+    <div class="grid-sizer"></div>
+    @* Adds grid items here *@
+</div>
+
+<div class="modal fade" id="artworkDetailsModal" tabindex="-1" aria-labelledby="artworkDetailsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            @* Adds artwork detail partial view here *@
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/artworkMasonryGrid.js"></script>
+}

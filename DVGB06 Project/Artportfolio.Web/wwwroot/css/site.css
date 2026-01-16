@@ -1,0 +1,31 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  padding-top: 66px; /* Added to prevent static top navbar to cover the content*/
+  margin-bottom: 60px;
+}
+
+#filterForm {
+    position: absolute;
+    top: 55px; /* Adjust this value based on the height of your navbar */
+    left: 0;
+    right: auto;
+    z-index: 1000; /* Ensure it appears above other content */
+}
